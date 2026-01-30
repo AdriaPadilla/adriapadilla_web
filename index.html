@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Adrián Padilla - Academic CV</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #2c3e50;
+            --accent: #3498db;
+            --text: #333;
+            --light-bg: #f8f9fa;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        h1 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.8rem;
+            margin-bottom: 10px;
+            color: var(--primary);
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: var(--primary);
+            font-weight: 600;
+            display: inline-flex; /* Ensures icons and text align better */
+            align-items: center;
+            gap: 8px;
+            transition: color 0.3s;
+        }
+
+        .social-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Sizing for FontAwesome icons */
+        .social-links i {
+            font-size: 1.2rem; 
+        }
+
+        /* Precise sizing for the Scopus image to match FA icons */
+        .scopus-icon {
+            height: 1.2rem; /* Matches the font-size of the 'i' tags */
+            width: auto; /* Maintains aspect ratio */
+            object-fit: contain;
+        }
+
+        section {
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 5px;
+            font-family: 'Playfair Display', serif;
+            color: var(--primary);
+            margin-bottom: 25px;
+        }
+
+        .item {
+            margin-bottom: 20px;
+        }
+
+        .item-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .date {
+            color: var(--accent);
+            font-size: 0.9rem;
+        }
+
+        .institution {
+            font-style: italic;
+            color: #555;
+        }
+
+        .pub-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .pub-list li {
+            margin-bottom: 18px;
+            padding-left: 15px;
+            border-left: 3px solid #eee;
+        }
+
+        .pub-list li:hover {
+            border-left-color: var(--accent);
+        }
+
+        .doi {
+            font-size: 0.85rem;
+            color: var(--accent);
+            word-break: break-all;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .item-title { flex-direction: column; }
+            .social-links { gap: 15px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Adrián Padilla</h1>
+        <div class="subtitle">PhD in Audiovisual Communication and Advertising</div>
+        <div class="social-links">
+            <a href="https://scholar.google.es/citations?user=zKICdGIAAAAJ&hl=es" target="_blank">
+                <i class="fa-solid fa-graduation-cap"></i> Google Scholar
+            </a>
+            <a href="https://orcid.org/0000-0001-7668-1322" target="_blank">
+                <i class="fa-brands fa-orcid"></i> ORCID
+            </a>
+            <a href="https://www.scopus.com/authid/detail.uri?authorId=57204037262" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/26/Scopus_logo.svg/1280px-Scopus_logo.svg.png" alt="Scopus Logo" class="scopus-icon"> 
+            </a>
+        </div>
+    </header>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="item">
+            <div class="item-title">PhD in Audiovisual Communication and Advertising <span class="date">2022</span></div>
+            <div class="institution">Autonomous University of Barcelona (UAB)</div>
+        </div>
+        <div class="item">
+            <div class="item-title">MA in Communication and Digital Marketing <span class="date">2015</span></div>
+            <div class="institution">Autonomous University of Barcelona (UAB)</div>
+        </div>
+        <div class="item">
+            <div class="item-title">BA in Journalism <span class="date">2013</span></div>
+            <div class="institution">Autonomous University of Barcelona (UAB)</div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2>Academic & Professional Experience</h2>
+        <div class="item">
+            <div class="item-title">Full-time Professor <span class="date">2018 – Present</span></div>
+            <div class="institution">Euncet Business School</div>
+        </div>
+        <div class="item">
+            <div class="item-title">Adjunct Professor & Master's Program Coordinator <span class="date">2020 – 2024</span></div>
+            <div class="institution">Autonomous University of Barcelona (UAB)</div>
+            <small>Coordinator of the MA in Communication and Digital Marketing</small>
+        </div>
+        <div class="item">
+            <div class="item-title">Senior Research Support Technician <span class="date">2016 – 2024</span></div>
+            <div class="institution">Autonomous University of Barcelona (UAB)</div>
+        </div>
+        <div class="item">
+            <div class="item-title">SEO / SEM Specialist & Freelance Consultant <span class="date">2016 – 2018</span></div>
+        </div>
+        <div class="item">
+            <div class="item-title">SEO / SEM Marketing Specialist <span class="date">2015 – 2016</span></div>
+            <div class="institution">AT-LanguageSolutions</div>
+        </div>
+        <div class="item">
+            <div class="item-title">Digital Marketing Manager <span class="date">2014 – 2015</span></div>
+            <div class="institution">UAB</div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <ul class="pub-list">
+            <li>
+                <strong>Padilla, A. (2026).</strong> Networks beyond the links: Methodological challenges in mapping YouTube communities. <em>First Monday</em>, 31(1).<br>
+                <a href="https://doi.org/10.5210/fm.v31i1.14633" class="doi">https://doi.org/10.5210/fm.v31i1.14633</a>
+            </li>
+            <li>
+                <strong>Rieder, B., Padilla, A. & Coromina, Ò. (2025).</strong> Forgetful by design? A critical audit of YouTube’s search API for academic research. <em>Information, Communication & Society</em>, 1–20.<br>
+                <a href="https://doi.org/10.1080/1369118X.2025.2591767" class="doi">https://doi.org/10.1080/1369118X.2025.2591767</a>
+            </li>
+            <li>
+                <strong>Padilla, A., Coromina, Ò. & Prado, E. (2025).</strong> "Trusted Media” on YouTube: volume and visibility of public media in search results. <em>Revista Latina de Comunicación Social</em>, 83, 01-17.<br>
+                <a href="https://www.doi.org/10.4185/RLCS-2025-2336" class="doi">https://www.doi.org/10.4185/RLCS-2025-2336</a>
+            </li>
+            <li>
+                <strong>Padilla, A. (2025).</strong> The Shrinking Creator Economy: Inequality and Impoverishment of the Hispanic Twitch Ecosystem. <em>OSF Preprint</em>.<br>
+                <a href="https://doi.org/10.31235/osf.io/gef2q_v1" class="doi">https://doi.org/10.31235/osf.io/gef2q_v1</a>
+            </li>
+            <li>
+                <strong>Padilla, A. (2023).</strong> YouTube disinformation analysis: Volume, visibility and choice in search results. <em>UAB (Doctoral Thesis)</em>.<br>
+                <a href="https://tdx.cat/handle/10803/688436" class="doi">https://tdx.cat/handle/10803/688436</a>
+            </li>
+            <li>
+                <strong>Coromina, Ò. & Padilla, A. (2022).</strong> “Hands On”: incorporating data sprints and digital methods in digital marketing teaching. <em>Dígitos</em>, 1(8).<br>
+                <a href="https://doi.org/10.7203/drdcd.v1i8.243" class="doi">https://doi.org/10.7203/drdcd.v1i8.243</a>
+            </li>
+            <li>
+                <strong>Padilla, A. & Navarro, C. (2022).</strong> Audiences and streamers on Twitch: Consumption and production patterns in the Spanish-speaking world. <em>Quaderns del CAC</em>, 25(48).<br>
+                <a href="https://doi.org/10.34810/qcac48id406109" class="doi">https://doi.org/10.34810/qcac48id406109</a>
+            </li>
+            <li>
+                <strong>Padilla, A. & Coromina, C. (2022).</strong> How to Study YouTube With API-Based Methods. <em>SAGE Research Methods</em>.<br>
+                <a href="https://doi.org/10.4135/9781529609417" class="doi">https://doi.org/10.4135/9781529609417</a>
+            </li>
+            <li>
+                <strong>Coromina, Ò. & Padilla, A. (2019).</strong> Reconstructing memory narratives on Facebook with digital Methods. <em>Culture & History Digital Journal</em>, 7(2).<br>
+                <a href="https://doi.org/10.3989/chdj.2018.014" class="doi">https://doi.org/10.3989/chdj.2018.014</a>
+            </li>
+            <li>
+                <strong>Coromina, Ò., Prado, E. & Padilla, A. (2018).</strong> The grammatization of emotions on Facebook in the elections to the Parliament of Catalonia 2017. <em>El profesional de la información</em>.<br>
+                <a href="https://doi.org/10.3145/epi.2018.sep.05" class="doi">https://doi.org/10.3145/epi.2018.sep.05</a>
+            </li>
+        </ul>
+    </section>
+</div>
+
+</body>
+</html>
